@@ -31,9 +31,9 @@ public class PredikatKelulusan {
         System.out.println("IPK =" + ipk);
         
         int lamaStudi = tahunLulus - tahunMasuk + 1;
-        if (ipk >= 3.51 && lamaStudi <= 4) {
+        if (ipk >= 3.51 && ipk <= 4 && lamaStudi <= 4) {
             System.out.println("Predikat Lulus = Dengan Pujian (Summa CumLaude)");
-        } else if (ipk >= 3.51) {
+        } else if (ipk >= 3.51 && ipk <= 4) {
             System.out.println("Predikat Lulus = Dengan Pujian (CumLaude)");
         } else if (ipk >= 3.01 && ipk < 3.51) {
             System.out.println("Predikat Lulus = Sangat Memuaskan");
@@ -43,7 +43,7 @@ public class PredikatKelulusan {
             System.out.println("Predikat Lulus = Cukup");
         } else if (ipk < 2.00) {
             System.out.println("Predikat Lulus = Tidak Lulus");
-        } else if (ipk > 4.00 && ipk < 0) {
+        } else if (ipk > 4 || ipk < 0) {
             System.out.println("Predikat Lulus = Tidak Valid");
         }
     }
