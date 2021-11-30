@@ -51,7 +51,11 @@ public class Siakad {
             System.out.println("Belum ada data");
             System.out.println("");
         } else {
+            System.out.println("");
+            System.out.println("----------------------");
             System.out.println("Berikut data mahasiswa");
+            System.out.println("----------------------");
+            System.out.println("");
             for (int i=0; i<jumlahData;i++) {
                 mahasiswa[i].getDetail();
             }
@@ -86,6 +90,7 @@ public class Siakad {
     public void cariDataByNIM() {
         Scanner scan = new Scanner(System.in);
         System.out.print("Masukan NIM mahasiswa yang akan dicari = ");
+        System.out.print("");
         String nim = scan.nextLine();
         int index = getIndexByNIM(nim);
         if (index==-1) {

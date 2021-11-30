@@ -64,6 +64,7 @@ public class Mahasiswa extends Manusia {
         System.out.println("Tinggi badan anda adalah = " + this.tinggiBadan +" cm ");
         System.out.println("Berat badan anda adalah = " + this.beratBadan + " kg "); 
         System.out.println("Semester anda saat ini adalah = " + this.sem);
+        System.out.println("-----------------------------------");
     }
 
 }
