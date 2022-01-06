@@ -4,13 +4,15 @@ public class Mahasiswa extends Manusia {
     private double ipk;
     private String dosen;
     private int sem;
+    private String prodi;
 
-    public Mahasiswa(String nim, String nama,String dosen, double ipk, int sem) {
+    public Mahasiswa(String nim, String nama,String dosen, double ipk, int sem, String prodi) {
         this.nim = nim;
         this.nama = nama;
         this.ipk = ipk;
         this.sem = sem;
         this.dosen = dosen;
+        this.prodi = prodi;
     }
 
     public void setNIM(String nim) {
@@ -54,16 +56,23 @@ public class Mahasiswa extends Manusia {
 
     public double getSem() {
         return this.sem;
-    
+    }
+    public void setProdi(String prodi) {
+        this.prodi = prodi;
+    }
+
+    public String getProdi() {
+        return this.prodi;
     }
     public void getDetail() {
-        System.out.println("NIM anda adalah = " + this.nim);
-        System.out.println("Nama anda adalah = " + this.nama);
-        System.out.println("Dosen pembimbing anda adalah = " + this.dosen);
-        System.out.println("IPK anda adalah = " + this.ipk);
-        System.out.println("Tinggi badan anda adalah = " + this.tinggiBadan +" cm ");
-        System.out.println("Berat badan anda adalah = " + this.beratBadan + " kg "); 
-        System.out.println("Semester anda saat ini adalah = " + this.sem);
+        System.out.println("1. NIM = " + this.nim);
+        System.out.println("2. Nama = " + this.nama.toUpperCase());
+        System.out.println("3. Program Studi = " + this.prodi);
+        System.out.println("4. Dosen pembimbing = " + this.dosen.toUpperCase());
+        System.out.println("5. IPK = " + this.ipk);
+        System.out.println("6. Tinggi badan = " + this.tinggiBadan + " cm ");
+        System.out.println("7. Berat badan = " + this.beratBadan + " kg "); 
+        System.out.println("8. Semester = " + this.sem);
         System.out.println("-----------------------------------");
     }
 
